@@ -25,7 +25,7 @@ app.use(express.json());
 // TODO: Add routes
 app.use('/api/auth', require('./Routes/auth'));
 // TODO: CRUD:Events
-
+app.use('/api/events', require('./Routes/events'));
 
 // The port the express app will listen on
 app.listen(process.env.PORT || 5000 , ()=>{
